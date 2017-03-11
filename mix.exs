@@ -4,7 +4,7 @@ defmodule Cards.Mixfile do
   def project do
     [app: :cards,
      version: "0.0.1",
-     elixir: "~> 1.1-dev",
+     elixir: "~> 1.4.1",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps]
@@ -27,6 +27,10 @@ defmodule Cards.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    []
+    [
+
+        {:ex_doc,"~>0.12"}
+
+     ]
   end
 end
